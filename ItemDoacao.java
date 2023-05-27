@@ -5,7 +5,8 @@ package model;
 public class ItemDoacao extends Doacao{
     private Alimento produto;
     private float quantidade;
-
+    private float calc_item;
+    
     public Alimento getProduto() {
         return produto;
     }
@@ -23,8 +24,12 @@ public class ItemDoacao extends Doacao{
     }
     
     public float calculoItem() {
-        float calc_item;
         calc_item = this.getProduto().getCreditokg() * quantidade;
         return calc_item ;
     }
+    
+        public float getCalc_item() {
+        return calc_item;
+    }
+    
 }

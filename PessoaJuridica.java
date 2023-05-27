@@ -4,7 +4,9 @@ package model;
 
 public class PessoaJuridica extends Doador {
     
-    public void impromeDados(){
+    private final float ALIQUOTA_PJ = 0.05f;    
+   
+    public void imprimeDados(){
         System.out.println("Creditos: ");
         
     }

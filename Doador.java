@@ -2,9 +2,10 @@
 package model;
 
 
-public abstract class Doador {
+public abstract class Doador extends Doacao {
     protected String nome;
     protected int codigoDoador;
+    protected Doacao[] doacoes = new Doacao[1000];//falta tamanho do array
 
     public int getCodigoDoador() {
         return codigoDoador;
@@ -13,7 +14,7 @@ public abstract class Doador {
     public void setCodigoDoador(int codigoDoador) {
         this.codigoDoador = codigoDoador;
     }
-    protected Doacao[] doacoes = new Doacao[100];//falta tamanho do array
+    
     
     public void incluirDoacao(){
         
